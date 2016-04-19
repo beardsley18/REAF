@@ -1,0 +1,25 @@
+﻿Build started 4/15/2016 6:10:22 PM.
+     1>Project "C:\Users\Sarah\Documents\Visual Studio 2013\Projects\C++\VectorNav\VectorNav\vnccpplib-0.3.2\examples\vn100_windows_basic\Vn100WindowsBasic.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I..\..\include /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\src\arch\win32\vncp_services.c ..\..\src\vn100.c ..\..\src\vndevice.c vn100_windows_basic.c
+         vn100_windows_basic.c
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\include\vncp_services.h(82): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\include\vncp_services.h(82): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         vndevice.c
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\include\vncp_services.h(82): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\include\vncp_services.h(82): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         vn100.c
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\include\vncp_services.h(82): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\include\vncp_services.h(82): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+         vncp_services.c
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\include\vncp_services.h(82): error C2628: 'int8_t' followed by 'bool' is illegal (did you forget a ';'?)
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\include\vncp_services.h(82): warning C4091: 'typedef ' : ignored on left of 'char' when no variable is declared
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\src\arch\win32\vncp_services.c(246): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\src\arch\win32\vncp_services.c(363): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\sarah\documents\visual studio 2013\projects\c++\vectornav\vectornav\vnccpplib-0.3.2\src\arch\win32\vncp_services.c(466): warning C4018: '<' : signed/unsigned mismatch
+         Generating Code...
+     1>Done Building Project "C:\Users\Sarah\Documents\Visual Studio 2013\Projects\C++\VectorNav\VectorNav\vnccpplib-0.3.2\examples\vn100_windows_basic\Vn100WindowsBasic.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.90
