@@ -3,7 +3,7 @@
 #include "vectornav.h"
 
 /* Change the connection settings to your configuration. */
-const char* const COM_PORT = "//dev//ttyS1";
+const char* const COM_PORT = "/dev/ttyUSB0";
 const int BAUD_RATE = 115200;
 
 int main()
