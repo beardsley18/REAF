@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['scenario',['scenario',['../struct_ins_basic_configuration_register_vn200.html#a5a7f1430ffa9ff7909136b2d83d7f2d7',1,'InsBasicConfigurationRegisterVn200::scenario()'],['../struct_ins_basic_configuration_register_vn300.html#a5a7f1430ffa9ff7909136b2d83d7f2d7',1,'InsBasicConfigurationRegisterVn300::scenario()']]],
+  ['sensor',['sensor',['../struct_vn_ez_async_data.html#a5b16933dbc0bb53a3b2d584aee515e94',1,'VnEzAsyncData']]],
+  ['senssat',['sensSat',['../struct_vn_composite_data.html#af84067adb14fad35669540940236ce97',1,'VnCompositeData']]],
+  ['serialchecksum',['serialChecksum',['../struct_communication_protocol_control_register.html#a66d3a9572684d73d399912a8d887d06f',1,'CommunicationProtocolControlRegister']]],
+  ['serialcount',['serialCount',['../struct_communication_protocol_control_register.html#a5a744331820fefced775ccbe929530bb',1,'CommunicationProtocolControlRegister']]],
+  ['serialstatus',['serialStatus',['../struct_communication_protocol_control_register.html#a42b29e9a307b715e0ecd595efc80fc06',1,'CommunicationProtocolControlRegister']]],
+  ['speedacc',['speedAcc',['../struct_gps_solution_lla_register.html#a65db50c21172a2804f79029cbbf5e25a',1,'GpsSolutionLlaRegister::speedAcc()'],['../struct_gps_solution_ecef_register.html#a65db50c21172a2804f79029cbbf5e25a',1,'GpsSolutionEcefRegister::speedAcc()']]],
+  ['spichecksum',['spiChecksum',['../struct_communication_protocol_control_register.html#a886cf7115ddb3c9ade3170cb899a60ff',1,'CommunicationProtocolControlRegister']]],
+  ['spicount',['spiCount',['../struct_communication_protocol_control_register.html#ac8094a912340d7cdcf45382bea025d4c',1,'CommunicationProtocolControlRegister']]],
+  ['spistatus',['spiStatus',['../struct_communication_protocol_control_register.html#a983a1e76f721c4561270f3abc9a59ed3',1,'CommunicationProtocolControlRegister']]],
+  ['status',['status',['../struct_ins_solution_lla_register.html#a5393c99e246925076b1dfd69a64177ef',1,'InsSolutionLlaRegister::status()'],['../struct_ins_solution_ecef_register.html#a5393c99e246925076b1dfd69a64177ef',1,'InsSolutionEcefRegister::status()']]],
+  ['syncincnt',['syncInCnt',['../struct_vn_composite_data.html#ad50a62350c1430e02769c22071a3998f',1,'VnCompositeData']]],
+  ['syncincount',['syncInCount',['../struct_synchronization_status_register.html#a584810419fd3f671ec4f271001192bcb',1,'SynchronizationStatusRegister']]],
+  ['syncinedge',['syncInEdge',['../struct_synchronization_control_register.html#a9e9a05909838307052a0f4a72e54a41a',1,'SynchronizationControlRegister']]],
+  ['syncinmode',['syncInMode',['../struct_synchronization_control_register.html#acff9a678232f265696c6a2910f2e2cba',1,'SynchronizationControlRegister']]],
+  ['syncinskipfactor',['syncInSkipFactor',['../struct_synchronization_control_register.html#af9c796275d0a80b5a5cd19fd263f3b69',1,'SynchronizationControlRegister']]],
+  ['syncintime',['syncInTime',['../struct_synchronization_status_register.html#a1a58709da5ac7ca48ac2fb0d3385efcf',1,'SynchronizationStatusRegister']]],
+  ['syncoutcount',['syncOutCount',['../struct_synchronization_status_register.html#aa068bfde2979052594dedb69d2553642',1,'SynchronizationStatusRegister']]],
+  ['syncoutmode',['syncOutMode',['../struct_synchronization_control_register.html#adefd395cd7266d8c2121b4cc6b05ff0c',1,'SynchronizationControlRegister']]],
+  ['syncoutpolarity',['syncOutPolarity',['../struct_synchronization_control_register.html#aca0515bb4c0c54a2a191989853d47981',1,'SynchronizationControlRegister']]],
+  ['syncoutpulsewidth',['syncOutPulseWidth',['../struct_synchronization_control_register.html#ad782668008b729cb1648928e805ccf30',1,'SynchronizationControlRegister']]],
+  ['syncoutskipfactor',['syncOutSkipFactor',['../struct_synchronization_control_register.html#a4eb5cd91ab3b194b9d17637128524e96',1,'SynchronizationControlRegister']]]
+];
