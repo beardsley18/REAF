@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "proglib-c", "proglib-c.vcproj", "{DFF24D80-38E3-3964-B161-F539EF294BE1}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13BA0DB3-B0BE-3958-96D8-15A969989840}.Debug|Win32.ActiveCfg = Debug|Win32
+		{13BA0DB3-B0BE-3958-96D8-15A969989840}.Release|Win32.ActiveCfg = Release|Win32
+		{13BA0DB3-B0BE-3958-96D8-15A969989840}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{13BA0DB3-B0BE-3958-96D8-15A969989840}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{DFF24D80-38E3-3964-B161-F539EF294BE1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{DFF24D80-38E3-3964-B161-F539EF294BE1}.Debug|Win32.Build.0 = Debug|Win32
+		{DFF24D80-38E3-3964-B161-F539EF294BE1}.Release|Win32.ActiveCfg = Release|Win32
+		{DFF24D80-38E3-3964-B161-F539EF294BE1}.Release|Win32.Build.0 = Release|Win32
+		{DFF24D80-38E3-3964-B161-F539EF294BE1}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{DFF24D80-38E3-3964-B161-F539EF294BE1}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{DFF24D80-38E3-3964-B161-F539EF294BE1}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{DFF24D80-38E3-3964-B161-F539EF294BE1}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
