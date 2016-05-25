@@ -21,7 +21,7 @@ while True:
     ahrs.append(count)
     if count >= 10:
         break
-
+    
 # get time when while loop terminates    
 endTime = datetime.datetime.now()
 
