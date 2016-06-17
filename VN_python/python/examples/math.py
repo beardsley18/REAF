@@ -1,0 +1,186 @@
+
+if __name__ == '__main__':
+
+	print('')
+	print('Python Access Example')
+	print('')
+	print('Objective: Basic overview of math functionality.')
+	print('')
+	
+	import sys
+	sys.path.append("C:\workspace\proglib\python")
+	
+	#from vnpy import math
+	import vnpy.math
+	
+	print('Vectors')
+	print('')
+	print('Common vectors you will normally encounter are conveniently named.')
+	print('Examples include vec2f, vec3d, and vec4i32')
+	print('')
+	
+	print('Below we create some vectors.')
+	
+	v1 = vnpy.math.vec3f(1, 2, 3)    # Initialized 3 component vector of floats.
+	v2 = vnpy.math.vec3d(4, 5, 6)    # Initialized 3 component vector of doubles.
+	v3 = vnpy.math.vec4f(1, 2, 3, 4) # Initialized 4 component vector of floats.
+	
+	print('v1 = vnpy.math.vec3f(1, 2, 3)')
+	print('v1 = vnpy.math.vec3f(5, 5, 6)')
+	print('v1 = vnpy.math.vec4f(1, 2, 3, 4)')
+	print('')
+	print('Displaying these vectors')
+	print('v1: {0}'.format(v1))
+	print('v2: {0}'.format(v2))
+	print('v3: {0}'.format(v3))
+	print('')
+	print('We also have some common vectors')
+	print('The zero vector: {}'.format(vnpy.math.vec3f.zero))
+	print('The one vector: {}'.format(vnpy.math.vec3f.one))
+	print('')
+	print('Unit vectors')
+	print('x-direction vector: {0}'.format(vnpy.math.vec3f.unit_x))
+	print('y-direction vector: {0}'.format(vnpy.math.vec3f.unit_y))
+	print('z-direction vector: {0}'.format(vnpy.math.vec3f.unit_z))
+	print('')
+	print('Common vector operations.')
+	
+	# Creating two 3f and two 4d vectors
+	va = vnpy.math.vec3f(1, 2, 3)
+	vb = vnpy.math.vec3f(4, 5, 6)
+	vc = vnpy.math.vec4d(1, 2, 3, 4)
+	vd = vnpy.math.vec4d(5, 6, 7, 8)
+	
+	print('')
+	print('we have four vectors')
+	print('va: {0}'.format(va))
+	print('vb: {0}'.format(vb))
+	print('vc: {0}'.format(vc))
+	print('vd: {0}'.format(vd))
+	print('')
+	print('Vector 3 operations')
+	print('      va + vb = {0}'.format(va + vb))
+	print('      va - vb = {0}'.format(va - vb))
+	print('       2 * va = {0}'.format(2 * va))
+	print('      va *  2 = {0}'.format(va * 2))
+	print('      va /  3 = {0}'.format(va / 3))
+	print('          -va = {0}'.format(-va))
+	print(' va magnitude = {0}'.format(va.mag()))
+	print('va normalized = {0}'.format(va.norm()))
+	print('')
+	print('Individual component access.')
+	print('va x-component: {0}'.format(va.x))
+	print('va y-component: {0}'.format(va.y))
+	print('va z-component: {0}'.format(va.z))
+	print('')
+	print('va r-component: {0}'.format(va.r))
+	print('va g-component: {0}'.format(va.g))
+	print('va b-component: {0}'.format(va.b))
+	print('')
+	print('Vector 4 operations')
+	print('      vc + vd = {0}'.format(vc + vd))
+	print('      vc - vd = {0}'.format(vc - vd))
+	print('       2 * vc = {0}'.format(2 * vc))
+	print('      vc *  2 = {0}'.format(vc * 2))
+	print('      vc /  3 = {0}'.format(vc / 3))
+	print('          -vc = {0}'.format(-vc))
+	print(' vc magnitude = {0}'.format(vc.mag()))
+	print('vc normalized = {0}'.format(vc.norm()))
+	print('')
+	print('Individual component access.')
+	print('vc x-component: {0}'.format(vc.x))
+	print('vc y-component: {0}'.format(vc.y))
+	print('vc z-component: {0}'.format(vc.z))
+	print('vc w-component: {0}'.format(vc.w))
+	print('')
+	print('vc r-component: {0}'.format(vc.r))
+	print('vc g-component: {0}'.format(vc.g))
+	print('vc b-component: {0}'.format(vc.b))
+	print('vc a-component: {0}'.format(vc.a))
+	print('')
+	print('')
+	print('')
+	print('Matricies')
+	print('')
+	print('Common matricies you will normally encounter are conveniently named.')
+	print('Examples include mat2f, mat3d, and mat4ld')
+	print('')
+	print('Below we create some matricies.')
+
+	m1 = vnpy.math.mat3f(5)
+	m2 = vnpy.math.mat3f(va, vb, va)
+
+	print('')
+	print('first, create a matrix with all values initilized to five')
+	print('m1 = mat3f(5): ', m1)
+	print('')
+	print('next, create a 3x3 matrix using the vectors from the')
+	print('vector example above')
+	print('m2 = mat3f(va, vb, va): ', m2)
+	print('')
+	print('There are also the standard vectors')
+	print('    zero 3x3 matrix: ', vnpy.math.mat3f.zero)
+	print('     one 3x3 matrix: ', vnpy.math.mat3f.one)
+	print('identity 3x3 matrix: ', vnpy.math.mat3f.identity)
+	print('')
+	print('Individual component access.')
+	print('m2 e01: {0}'.format(m2.e01))
+	print('m2 e11: {0}'.format(m2.e11))
+	print('m2 e21: {0}'.format(m2.e21))
+	print('')
+	print('Matrix operations')
+	
+	ma = vnpy.math.mat3f(va, vb, va)
+	mb = vnpy.math.mat3f.one
+	mc = vnpy.math.mat3f.zero
+	md = vnpy.math.mat3f.one
+	
+	print('We have four matricies')
+	print('ma: {0)', ma)
+	print('mb: {0)', mb)
+	print('mc: {0)', mc)
+	print('md: {0)', md)
+	print('')
+	print('Matrix operations')
+	print('      ma + mb = {0}'.format(ma + mb))
+	print('      ma - mb = {0}'.format(ma - mb))
+	print('       2 * ma = {0}'.format(2 * ma))
+	print('      ma *  2 = {0}'.format(ma * 2))
+	print('      ma /  3 = {0}'.format(ma / 3))
+	print('          -ma = {0}'.format(-ma))
+	print('')
+	print('WARNING : Python does not have an assigment operator "=" for complex types')
+	print('        : The "=" does not copy a complex type but associates a new name')
+	print('        : to an object.')
+	print('        : Use the .copy([object]) command instead')
+	print('')
+	print('The right way using ma and mb')
+	
+	mb.copy(ma)
+	
+	print('mb.copy(ma)')
+	print('mb: ', mb)
+	
+	mb *= 2
+	
+	print('mb *= 2')
+	print('ma: ', ma)
+	print('mb: ', mb)
+	print('')
+	print('The wrong way using ma and md')
+	
+	md = ma
+	
+	print('md = ma')
+	print('md: ', md)
+	
+	md *= 2
+	
+	print('md *= 2')
+	print('ma: ', ma)
+	print('md: ', md)
+	print('')
+	print('Notice that in the first example ma remained unchanged')
+	print('while mb had its data altered.  In the second example')
+	print('it appears as if both ma and md changed.  However, both')
+	print('ma and md were simply refering to the same spot in memory')

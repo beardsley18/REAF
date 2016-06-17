@@ -1,0 +1,32 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "proglib-c", "proglib-c.vcxproj", "{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+		MinSizeRel|Win32 = MinSizeRel|Win32
+		RelWithDebInfo|Win32 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6005B1BF-ADDB-32E5-9950-DEF00B55D323}.Debug|Win32.ActiveCfg = Debug|Win32
+		{6005B1BF-ADDB-32E5-9950-DEF00B55D323}.Release|Win32.ActiveCfg = Release|Win32
+		{6005B1BF-ADDB-32E5-9950-DEF00B55D323}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{6005B1BF-ADDB-32E5-9950-DEF00B55D323}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}.Debug|Win32.Build.0 = Debug|Win32
+		{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}.Release|Win32.ActiveCfg = Release|Win32
+		{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}.Release|Win32.Build.0 = Release|Win32
+		{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}.MinSizeRel|Win32.ActiveCfg = MinSizeRel|Win32
+		{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}.MinSizeRel|Win32.Build.0 = MinSizeRel|Win32
+		{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}.RelWithDebInfo|Win32.ActiveCfg = RelWithDebInfo|Win32
+		{1D7583B7-5BB2-36AA-B16C-CEF89FC81CB4}.RelWithDebInfo|Win32.Build.0 = RelWithDebInfo|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal
