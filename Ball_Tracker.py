@@ -14,7 +14,7 @@ ap.add_argument("-b", "--buffer", type=int, default=64,
 	help="max buffer size")
 args = vars(ap.parse_args())
 
-$ pip install imutils
+# pip install imutils
 # define the lower and upper boundaries of the "green"
 # ball in the HSV color space, then initialize the
 # list of tracked points
@@ -30,7 +30,6 @@ if not args.get("video", False):
 # otherwise, grab a reference to the video file
 else:
 	camera = cv2.VideoCapture(args["video"])
-l Tracking with OpenCVPython
 
 # keep looping
 while True:
@@ -103,6 +102,3 @@ while True:
 # cleanup the camera and close any open windows
 camera.release()
 cv2.destroyAllWindows()
-$ python ball_tracking.py --video ball_tracking_example.mp4
-	
-$ python ball_tracking.py
