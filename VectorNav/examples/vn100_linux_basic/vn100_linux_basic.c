@@ -33,7 +33,10 @@ int main()
 		return 0;
 	}
 	
-	printf("Yaw, Pitch, Roll\n");
+	FILE *file;
+	file = fopen("ahrs_output.txt", "w");
+	//fprintf(file, "Yaw, Pitch, Roll\n");
+	//printf("Yaw, Pitch, Roll\n");
 
 	for (i = 0; i < 10; i++)
 	{
@@ -44,12 +47,15 @@ int main()
 		   response is received. */
 		errorCode = vn100_getYawPitchRoll(&vn100, &ypr);
 		
-		printf("  %+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
+		//printf("  %+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
+		fprintf(file, "%+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
 		
 		/* Wait for 1 second before we query the sensor again. */
 		sleep(1);
 		
 	}
+	//fprintf(file, "-----------------------------------------");
+	fclose(file);
 	
 	errorCode = vn100_disconnect(&vn100);
 	
