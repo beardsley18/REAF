@@ -4,6 +4,7 @@ currently receives AHRS and pressure sensor data and outputs data to a file
 """
 
 import datetime
+import time
 import decimal
 import serial
 import subprocess
@@ -21,23 +22,35 @@ ser = serial.Serial('/dev/ttyACM0',57600)
 
 # keep reading values
 def ahrsRun():
-	subprocess.call(["./vn100_linux_basic"])
-    
+	subprocess.call(["./VectorNav/examples/vn100_linux_basic/vn100_linux_basic"])
+
 def mainLoop():
+    time.sleep(5)
     count = 0
+    linesRead = 0
+    ahrsData = open('ahrs_output.txt', 'r')
+    line = ahrsData.readline()
     while True:
+        # copy ahrs data from ahrs_output.txt
+        # for i in range(linesRead-1):
+            # line = ahrsData.readline()
+        while line != "":
+            line = line.strip()
+            ahrs.append(line)
+            print line
+            line = ahrsData.readline()
+            linesRead += 1
         #pressure sensor
         try:
             r = ser.readline()
             r = float(decimal.Decimal(r))
-            print str(r)
             pressure.append(r)
         except:
             pass
-        # pressure.append(count)
         count += 1
         if count > 10:
             break
+    ahrsData.close()
         
         
 class AhrsThread(threading.Thread):
@@ -70,15 +83,6 @@ endTime = datetime.datetime.now()
 
 # clean up sensors
 
-# copy ahrs data from ahrs_output.txt
-ahrsData = open('ahrs_output.txt', 'r')
-line = ahrsData.readline()
-while line != "":
-        line = line.strip()
-        ahrs.append(line)
-        print line
-        line = ahrsData.readline()
-ahrsData.close()
 
 # store data to file
 outFile = open('output.txt', 'a')

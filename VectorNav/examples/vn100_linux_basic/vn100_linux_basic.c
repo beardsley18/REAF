@@ -34,7 +34,12 @@ int main()
 	}
 	
 	FILE *file;
-	file = fopen("ahrs_output.txt", "w");
+	if((file = popen("test", "w")) == NULL)
+	{
+		perror("popen");
+		exit(1);
+	}
+	//file = fopen("ahrs_output.txt", "w");
 	//fprintf(file, "Yaw, Pitch, Roll\n");
 	//printf("Yaw, Pitch, Roll\n");
 
@@ -48,14 +53,18 @@ int main()
 		errorCode = vn100_getYawPitchRoll(&vn100, &ypr);
 		
 		//printf("  %+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
-		fprintf(file, "%+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
+		//fputs("  %+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll, file);
+		fputs("yaw pitch roll", file);
+		//printf("c");
+		//fprintf(file, "%+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
 		
 		/* Wait for 1 second before we query the sensor again. */
 		sleep(1);
 		
 	}
 	//fprintf(file, "-----------------------------------------");
-	fclose(file);
+	//fclose(file);
+	pclose(file);
 	
 	errorCode = vn100_disconnect(&vn100);
 	
