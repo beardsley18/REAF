@@ -48,14 +48,13 @@ def mainLoop():
                 line = line.strip()
                 ahrs.append(line)
                 line = ahrsData.readline()
-                lastRead = ahrsData.tell()
+            lastRead = ahrsData.tell()
         except IOError as e:
             print 'ahrs: ' + str(e)
         #pressure sensor
         try:
             ptot = ser.readline()
             ptot = float(decimal.Decimal(ptot))
-            print ptot
             if (ptot < 25) and (ptot > 14):
                 count += 1
                 pressure.append(ptot)
@@ -63,7 +62,6 @@ def mainLoop():
                 h = (ptot-patm)/(r * g)  # Height of the fluid above the object
                 total = total + h
                 average = total / count
-                print average
 
                 # Send output to thrusters
                 if count == ms_per_reading:
