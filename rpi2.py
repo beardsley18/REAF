@@ -25,28 +25,32 @@ def ahrsRun():
 	subprocess.call(["./VectorNav/examples/vn100_linux_basic/vn100_linux_basic"])
 
 def mainLoop():
-    time.sleep(5)
+    time.sleep(1)
     count = 0
-    linesRead = 0
-    ahrsData = open('ahrs_output.txt', 'r')
-    line = ahrsData.readline()
+    lastRead = 0
     while True:
-        # copy ahrs data from ahrs_output.txt
-        # for i in range(linesRead-1):
-            # line = ahrsData.readline()
-        while line != "":
-            line = line.strip()
-            ahrs.append(line)
-            print line
+        #ahrs
+        try:
+            ahrsData = open('ahrs_output.txt', 'r')
+            ahrsData.seek(lastRead)
             line = ahrsData.readline()
-            linesRead += 1
+            while line != "":
+                line = line.strip()
+                ahrs.append(line)
+                print line
+                line = ahrsData.readline()
+                lastRead = ahrsData.tell()
+        except IOError as e:
+            print e
         #pressure sensor
         try:
             r = ser.readline()
             r = float(decimal.Decimal(r))
+            print r
             pressure.append(r)
         except:
             pass
+        time.sleep(1)
         count += 1
         if count > 10:
             break
@@ -73,6 +77,7 @@ class MainThread(threading.Thread):
 thread1 = AhrsThread(1)
 thread2 = MainThread(2)
 
+subprocess.call(["rm", "ahrs_output.txt"])
 thread1.start()
 thread2.start()
 thread1.join()

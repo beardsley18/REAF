@@ -34,15 +34,6 @@ int main()
 	}
 	
 	FILE *file;
-	if((file = popen("test", "w")) == NULL)
-	{
-		perror("popen");
-		exit(1);
-	}
-	//file = fopen("ahrs_output.txt", "w");
-	//fprintf(file, "Yaw, Pitch, Roll\n");
-	//printf("Yaw, Pitch, Roll\n");
-
 	for (i = 0; i < 10; i++)
 	{
 		
@@ -51,20 +42,22 @@ int main()
 		   sent to the physical sensor and this program will wait until a
 		   response is received. */
 		errorCode = vn100_getYawPitchRoll(&vn100, &ypr);
-		
-		//printf("  %+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
-		//fputs("  %+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll, file);
-		fputs("yaw pitch roll", file);
-		//printf("c");
-		//fprintf(file, "%+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
-		
-		/* Wait for 1 second before we query the sensor again. */
-		sleep(1);
-		
+		file = fopen("ahrs_output.txt", "a");
+		if(file != NULL)
+		{
+			//printf("  %+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
+			fprintf(file, "%+#7.2f %+#7.2f %+#7.2f\n", ypr.yaw, ypr.pitch, ypr.roll);
+			fclose(file);
+			/* Wait for 1 second before we query the sensor again. */
+			sleep(1);
+		}
+		else
+		{
+			printf("ahrs_output not opened\n");
+		}
+			
 	}
-	//fprintf(file, "-----------------------------------------");
-	//fclose(file);
-	pclose(file);
+	//fprintf(file, "-----------------------------------------")
 	
 	errorCode = vn100_disconnect(&vn100);
 	
