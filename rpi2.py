@@ -24,14 +24,7 @@ average = 0
 count = 0
 total = 0
 
-test = 0
-
-#constants for pressure sensor calculations
-# r = 1.03*10^3 # Density of the fluid (kg/m^3)
-r = 1030
-g = 9.8  # Acceleration due to gravity (m/s^2)
-patm = 101325  # Atmospheric pressure in pascals (N/m^2)
-ms_per_reading = 100        
+test = 0      
         
 class AhrsThread(threading.Thread):
 	def __init__(self, threadID):
@@ -52,26 +45,26 @@ class ThrustersThread(threading.Thread):
             time.sleep(2)
             test1 = 0
             while True:
-                    # print 'thrusters: ' + str(average) + ' ' + str(test)
+                # print 'thrusters: ' + str(average) + ' ' + str(test)
                 # if count == ms_per_reading:
-                    if average > 4:
-                        ser.write('b')
+                if average > 4:
+                    ser.write('b')
 
-                    if average < 4:
-                        ser.write('a')
-			print 'writing to a'
+                if average < 4:
+                    ser.write('a')
+		    # print 'writing to a'
 
-                    if average == 4:
-                        ser.write('c')
-                        ser.write('d')
+                if average == 4:
+                    ser.write('c')
+                    ser.write('d')
 
-                    test1 += 1
-                    # time.sleep(1)
-                    # if test1 > 10:
-                      #  break
+                test1 += 1
+                # time.sleep(1)
+                # if test1 > 10:
+                    # break
                 
-                    # count = 0
-                    # total = 0
+                # count = 0
+                # total = 0
 
 class MainThread(threading.Thread):
 	def __init__(self, threadID):
@@ -106,8 +99,9 @@ class MainThread(threading.Thread):
                     r = 1030
                     g = 9.8  # Acceleration due to gravity (m/s^2)
                     patm = 101325  # Atmospheric pressure in pascals (N/m^2)
-                    ms_per_reading = 100 
+                    ms_per_reading = 100
                     ptot = ser.readline()
+                    print ptot
                     ptot = float(decimal.Decimal(ptot))
                     if (ptot < 25) and (ptot > 14):
                         count += 1
@@ -123,7 +117,7 @@ class MainThread(threading.Thread):
                 time.sleep(1)
                 test += 1
                 # if test > 10:
-                  #  break
+                    # break
 
 
 # threadLock = threading.Lock()        
