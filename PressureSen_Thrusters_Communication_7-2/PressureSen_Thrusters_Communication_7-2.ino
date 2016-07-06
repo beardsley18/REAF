@@ -62,7 +62,7 @@ void loop() {
 
         motor_1.update();
 
-        Serial.print("ESC_1: ");
+        /*Serial.print("ESC_1: ");
         if(motor_1.isAlive()) Serial.print("OK\t\t"); 
         else Serial.print("NA\t\t");
         Serial.print(signal);Serial.print(" \t\t");  
@@ -71,7 +71,7 @@ void loop() {
         Serial.print(motor_1.current());Serial.print(" A\t\t");
         Serial.print(motor_1.temperature());Serial.print(" `C");
 
-        Serial.println();
+        Serial.println();*/
 
         delay(250); // Update at roughly 4 hz
 
@@ -87,7 +87,7 @@ void loop() {
 
         motor_2.update();
 
-        Serial.print("ESC_2: ");
+        /*Serial.print("ESC_2: ");
         if(motor_2.isAlive()) Serial.print("OK\t\t"); 
         else Serial.print("NA\t\t");
         Serial.print(signal);Serial.print(" \t\t");  
@@ -96,7 +96,7 @@ void loop() {
         Serial.print(motor_2.current());Serial.print(" A\t\t");
         Serial.print(motor_2.temperature());Serial.print(" `C");
 
-        Serial.println();
+        Serial.println();*/
 
         delay(250); // Update at roughly 4 hz
 
@@ -112,7 +112,7 @@ void loop() {
 
         motor_3.update();
 
-        Serial.print("ESC_3: ");
+        /*Serial.print("ESC_3: ");
         if(motor_3.isAlive()) Serial.print("OK\t\t"); 
         else Serial.print("NA\t\t");
         Serial.print(signal);Serial.print(" \t\t");  
@@ -121,7 +121,7 @@ void loop() {
         Serial.print(motor_3.current());Serial.print(" A\t\t");
         Serial.print(motor_3.temperature());Serial.print(" `C");
 
-        Serial.println();
+        Serial.println();*/
 
         delay(250); // Update at roughly 4 hz
         }
@@ -135,7 +135,7 @@ void loop() {
 
         motor_4.update();
 
-        Serial.print("ESC_2: ");
+        /*Serial.print("ESC_2: ");
         if(motor_4.isAlive()) Serial.print("OK\t\t"); 
         else Serial.print("NA\t\t");
         Serial.print(signal);Serial.print(" \t\t");  
@@ -144,7 +144,7 @@ void loop() {
         Serial.print(motor_4.current());Serial.print(" A\t\t");
         Serial.print(motor_4.temperature());Serial.print(" `C");
  
-        Serial.println();
+        Serial.println();*/
 
         delay(250); // Update at roughly 4 hz
         }
