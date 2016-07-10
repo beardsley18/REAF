@@ -52,8 +52,7 @@ Arduino_I2C_ESC motor2(ESC_ADDRESS2);
 Arduino_I2C_ESC motor3(ESC_ADDRESS3);
 Arduino_I2C_ESC motor4(ESC_ADDRESS4);
 
-char inByte;
-
+char inByte; 
 int signal;
 
 void setup() {
@@ -61,10 +60,7 @@ void setup() {
   Serial.println("Starting");
 
   Wire.begin();
-  motor1.set(1500);
-  motor2.set(1500);
-  motor3.set(1500);
-  motor4.set(1500);
+
 
   // Optional: Add these two lines to slow I2C clock to 12.5kHz from 100 kHz
   // This is best for long wire lengths to minimize errors
