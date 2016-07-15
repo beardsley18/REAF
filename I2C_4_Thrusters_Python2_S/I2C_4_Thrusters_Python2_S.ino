@@ -45,15 +45,15 @@ void loop() {
       motor1.set(signal);
       motor1.update();
   
-      /*Serial.print("ESC: ");
+      Serial.print("ESC: ");
       if(motor1.isAlive()) Serial.print("OK\t\t"); 
       else Serial.print("NA\t\t");
-      Serial.print(signal_1);Serial.print(" \t\t");  
+      Serial.print(signal);Serial.print(" \t\t");  
       Serial.print(motor1.rpm());Serial.print(" RPM\t\t");
       Serial.print(motor1.voltage());Serial.print(" V\t\t");
       Serial.print(motor1.current());Serial.print(" A\t\t");
       Serial.print(motor1.temperature());Serial.print(" `C");
-      Serial.println();*/
+      Serial.println();
   
       delay(250); // Update at roughly 4 hz for the demo
     }  
@@ -64,15 +64,15 @@ void loop() {
       motor2.set(signal);
       motor2.update();
   
-      /*Serial.print("ESC: ");
+      Serial.print("ESC: ");
       if(motor2.isAlive()) Serial.print("OK\t\t"); 
       else Serial.print("NA\t\t");
-      Serial.print(signal_2);Serial.print(" \t\t");  
+      Serial.print(signal);Serial.print(" \t\t");  
       Serial.print(motor2.rpm());Serial.print(" RPM\t\t");
       Serial.print(motor2.voltage());Serial.print(" V\t\t");
       Serial.print(motor2.current());Serial.print(" A\t\t");
       Serial.print(motor2.temperature());Serial.print(" `C");
-      Serial.println();*/
+      Serial.println();
   
       delay(250); // Update at roughly 4 hz for the demo
     }   
@@ -83,15 +83,15 @@ void loop() {
       motor3.set(signal);
       motor3.update();
   
-      /*Serial.print("ESC: ");
+      Serial.print("ESC: ");
       if(motor3.isAlive()) Serial.print("OK\t\t"); 
       else Serial.print("NA\t\t");
-      Serial.print(signal_3);Serial.print(" \t\t");  
+      Serial.print(signal);Serial.print(" \t\t");  
       Serial.print(motor3.rpm());Serial.print(" RPM\t\t");
       Serial.print(motor3.voltage());Serial.print(" V\t\t");
       Serial.print(motor3.current());Serial.print(" A\t\t");
       Serial.print(motor3.temperature());Serial.print(" `C");
-      Serial.println();*/
+      Serial.println();
   
       delay(250); // Update at roughly 4 hz for the demo
     }  
@@ -102,15 +102,15 @@ void loop() {
       motor4.set(signal);
       motor4.update();
   
-      /*Serial.print("ESC: ");
-      if(motor2.isAlive()) Serial.print("OK\t\t"); 
+      Serial.print("ESC: ");
+      if(motor4.isAlive()) Serial.print("OK\t\t"); 
       else Serial.print("NA\t\t");
-      Serial.print(signal_4);Serial.print(" \t\t");  
+      Serial.print(signal);Serial.print(" \t\t");  
       Serial.print(motor4.rpm());Serial.print(" RPM\t\t");
       Serial.print(motor4.voltage());Serial.print(" V\t\t");
       Serial.print(motor4.current());Serial.print(" A\t\t");
       Serial.print(motor4.temperature());Serial.print(" `C");
-      Serial.println();*/
+      Serial.println();
   
       delay(250); // Update at roughly 4 hz for the demo
     }
