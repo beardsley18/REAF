@@ -37,9 +37,9 @@ void loop() {
     //signal = Serial.parseInt();
     signal = 3000;
 
-    char inByte = read_serial();
+    char inByte = Serial.read();
     if(inByte == 'a') {
-      Serial.print("Receiving a");
+      Serial.println("Receiving a");
       //motor1.set(signal_1);
       //signal_1 = 3000;
       motor1.set(signal);
@@ -58,7 +58,7 @@ void loop() {
       delay(250); // Update at roughly 4 hz for the demo
     }  
     else if(inByte == 'b') {
-      Serial.print("Receiving b");
+      Serial.println("Receiving b");
       //motor2.set(signal_2);
       //signal_2 = 3000;
       motor2.set(signal);
@@ -99,7 +99,7 @@ void loop() {
       Serial.println("Receiving d");
       //motor4.set(signal_4);
       //signal_4 = 3000;
-      motor4.set(signal)
+      motor4.set(signal);
       motor4.update();
   
       /*Serial.print("ESC: ");
