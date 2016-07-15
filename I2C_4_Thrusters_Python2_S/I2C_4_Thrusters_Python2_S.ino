@@ -1,6 +1,6 @@
 #include <Wire.h>
 #include "Arduino_I2C_ESC.h"
-#include <Firmata.h>
+//#include <Firmata.h>
 
 // #define ESC_ADDRESS 0x29
 #define ESC_ADDRESS1 0x2A
@@ -15,10 +15,10 @@ Arduino_I2C_ESC motor3(ESC_ADDRESS3);
 Arduino_I2C_ESC motor4(ESC_ADDRESS4);
 
 int signal;
-int signal_1;
-int signal_2;
-int signal_3;
-int signal_4;
+//int signal_1;
+//int signal_2;
+//int signal_3;
+//int signal_4;
 
 void setup() {
   Serial.begin(57600);
