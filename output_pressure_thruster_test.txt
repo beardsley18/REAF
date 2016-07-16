@@ -1,0 +1,295 @@
+¸Starting
+Starting
+b
+Starting
+b
+Receiving b
+ESC: OK		3000 		64 RPM		5.13 V		0.86 A		23.17 `C
+b
+Receiving b
+ESC: OK		0 		160 RPM		5.10 V		0.93 A		23.30 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.10 V		0.93 A		23.30 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.10 V		0.93 A		23.17 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.10 V		0.93 A		23.17 `C
+b
+Receiving b
+ESC: OK		0 		139 RPM		5.17 V		0.93 A		23.17 `C
+b
+Receiving b
+ESC: OK		3000 		70 RPM		5.17 V		0.93 A		23.17 `C
+b
+Receiving b
+ESC: OK		0 		168 RPM		5.07 V		1.01 A		23.17 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.07 V		1.01 A		23.17 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.17 V		0.93 A		23.17 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.17 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		160 RPM		5.07 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.07 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.13 V		0.93 A		23.30 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.13 V		0.93 A		23.30 `C
+b
+Receiving b
+ESC: OK		0 		159 RPM		5.17 V		1.01 A		23.30 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.17 V		1.01 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		168 RPM		5.07 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.07 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		160 RPM		5.07 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.07 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.13 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.13 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		160 RPM		5.07 V		1.01 A		23.30 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.07 V		1.01 A		23.30 `C
+b
+Receiving b
+ESC: OK		0 		159 RPM		5.17 V		1.01 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.17 V		1.01 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.07 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.07 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		160 RPM		5.07 V		1.01 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.07 V		1.01 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		150 RPM		5.10 V		1.01 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		70 RPM		5.10 V		1.01 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		159 RPM		5.10 V		1.01 A		23.66 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.10 V		0.79 A		23.66 `C
+b
+Receiving b
+ESC: OK		0 		159 RPM		5.10 V		0.86 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.10 V		0.86 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		110 RPM		5.13 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		79 RPM		5.13 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.10 V		0.86 A		23.78 `C
+b
+Receiving b
+ESC: OK		3000 		49 RPM		5.10 V		0.86 A		23.78 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.13 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.13 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		169 RPM		5.10 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.10 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		168 RPM		5.10 V		0.86 A		23.30 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.13 V		0.86 A		23.30 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.13 V		1.15 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.13 V		1.15 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.13 V		0.79 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		49 RPM		5.13 V		0.79 A		23.54 `C
+FStarting
+b
+Receiving b
+ESC: OK		3000 		2815 RPM		5.13 V		0.79 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		160 RPM		5.13 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.07 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		149 RPM		5.10 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		3000 		70 RPM		5.10 V		0.86 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		79 RPM		5.20 V		0.93 A		23.42 `C
+Starting
+b
+Receiving b
+ESC: OK		3000 		85 RPM		5.20 V		0.93 A		23.42 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.13 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.13 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.10 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.10 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		149 RPM		5.13 V		1.01 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.13 V		1.01 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		159 RPM		5.01 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.01 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.10 V		0.93 A		23.54 `C
+b
+Receiving b
+ESC: OK		3000 		59 RPM		5.10 V		0.86 A		23.54 `C
+b
+Receiving b
+ESC: OK		0 		170 RPM		5.10 V		0.86 A		23.54 `C
+Starting
+b
+Receiving b
+ESC: OK		3000 		0 RPM		0.00 V		-36.76 A		133.30 `C
+b
+Receiving b
+ESC: OK		0 		160 RPM		5.07 V		1.01 A		133.30 `C
+b
+Receiving b
+ESC: OK		3000 		60 RPM		5.07 V		1.01 A		22.06 `C
+b
+Receiving b
+ESC: OK		0 		178 RPM		5.07 V		0.93 A		22.06 `C
+b
+Receiving b
+ESC: OK		3000 		50 RPM		5.07 V		0.93 A		21.93 `C
+b
+Receiving b
+ESC: OK		0 		159 RPM		5.10 V		0.93 A		21.81 `C
+b
+Receiving b
+ESC: OK		3000 		2 RPM		5.10 V		0.86 A		21.81 `C
+jStarting
+b
+Receiving b
+ESC: OK		3000 		5888 RPM		5.13 V		0.86 A		22.56 `C
+a
+Receiving a
+ESC: OK		3000 		0 RPM		5.07 V		0.00 A		22.18 `C
+a
+Receiving a
+ESC: OK		0 		139 RPM		5.10 V		0.00 A		22.31 `C
+b
+Receiving b
+ESC: OK		0 		187 RPM		5.13 V		0.86 A		22.80 `C
+a
+Receiving a
+ESC: OK		3000 		6 RPM		5.10 V		-0.07 A		22.31 `C
+b
+Receiving b
+ESC: OK		3000 		6 RPM		5.13 V		0.86 A		22.80 `C
+¸þStarting
+b
+Receiving b
+ESC: OK		3000 		0 RPM		0.00 V		-36.76 A		-273.15 `C
+a
+Receiving a
+ESC: OK		3000 		0 RPM		0.00 V		-36.76 A		-273.15 `C
+a
+Receiving a
+ESC: OK		0 		147 RPM		5.10 V		0.07 A		22.31 `C
+b
+Receiving b
+ESC: OK		0 		187 RPM		5.13 V		1.08 A		22.68 `C
+a
+Receiving a
+ESC: OK		3000 		5 RPM		5.10 V		0.07 A		22.31 `C
+b
+Receiving b
+ESC: OK		3000 		7 RPM		5.13 V		1.08 A		22.68 `C
+jâStarting
+b
+Receiving b
+ESC: OK		3000 		10467 RPM		5.10 V		0.86 A		22.93 `C
+a
+Receiving a
+ESC: OK		3000 		3926 RPM		5.10 V		0.22 A		22.68 `C
+a
+Receiving a
+ESC: OK		0 		147 RPM		5.10 V		0.36 A		22.68 `C
+b
+Receiving b
+ESC: OK		0 		187 RPM		5.07 V		0.86 A		23.05 `C
+a
+Receiving a
+ESC: OK		3000 		4 RPM		5.10 V		0.14 A		22.68 `C
+b
+Receiving b
+ESC: OK		3000 		7 RPM		5.07 V		0.86 A		23.05 `C
+b
+Receiving b
+ESC: OK		0 		165 RPM		5.13 V		0.93 A		23.30 `C

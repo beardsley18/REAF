@@ -2,6 +2,7 @@ import serial
 import time
 import random
 import threading
+# ls /dev/tty*
 ser = serial.Serial('/dev/ttyACM0',57600)
 # false if off, true if on
 t1_status = False
@@ -15,9 +16,17 @@ t3_stat_changed = False
 t4_stat_changed = False
 
 def send(lett):
+    global t1_stat_changed
+    global t2_stat_changed
+    global t3_stat_changed
+    global t4_stat_changed
+    global t1_status
+    global t2_status
+    global t3_status
+    global t4_status
     while True:
         ser.write(lett)
-        time.sleep(1)
+        time.sleep(.5)
         if lett == 'a':
             if t1_stat_changed:
                 t1_stat_changed = False
@@ -57,17 +66,23 @@ class readThread(threading.Thread):
             self.threadID = threadID
 	
 	def run(self):
+            global t1_stat_changed
+            global t2_stat_changed
+            global t3_stat_changed
+            global t4_stat_changed
             while True:
                 outFile = open('output_pressure_thruster_test.txt', 'a')
                 line = ser.readline()
                 if 'Receiving' in line:
-                    if line[line.length()-1] == 'a':
+                    # print line[len(line)-3]
+                    # print '\'' + line + '\''
+                    if line[len(line)-3] == 'a':
                         t1_stat_changed = True
-                    elif line[line.length()-1] == 'b':
+                    elif line[len(line)-3] == 'b':
                         t2_stat_changed = True
-                    elif line[line.length()-1] == 'c':
+                    elif line[len(line)-3] == 'c':
                         t3_stat_changed = True
-                    elif line[line.length()-1] == 'd':
+                    elif line[len(line)-3] == 'd':
                         t4_stat_changed = True
                 # else:
                 outFile.write(line)
@@ -80,6 +95,7 @@ class writeThread(threading.Thread):
 	
 	def run(self):
             send('b')
+            send('a')
             for x in range(0,50000):
                 print 'Sending a'
                 print x
@@ -90,13 +106,17 @@ class writeThread(threading.Thread):
                 print 'Sending b'
                 print x
 
-            send('a')
             send('b')
             for x in range(0, 50000):
                 print 'Sending both'
                 print x
 
             send('a')
+            send('b')
+
+            for x in range(0, 50000):
+                print x
+
             send('b')
     
    
