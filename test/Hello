@@ -1,0 +1,45 @@
+from __future__ import division
+import time
+
+# Import the PCA9685 module.
+import Adafruit_PCA9685
+
+pwm = Adafruit_PCA9685.PCA9685(address=0x40)
+
+#1100us -> 272 Full power reverse
+#1500us -> 387 Stopped
+#1900us -> 502 Full power Forward
+
+signal = 387
+signaldir = 1
+looping = True
+logic = False
+
+pwm.set_pwm_freq(int(50))
+
+pwm.set_pwm(0, 0, 387)
+time.sleep(3)
+print("ESC Inititalized")
+
+while True:
+  print("Running")
+  pwm.set_pwm(0, 0, 387)
+  time.sleep(1)
+  pwm.set_pwm(0, 0, 502)
+  time.sleep(5)
+
+#try:
+#  while (looping):
+#	if (signal == 502):
+ #         signaldir = -1
+#	if (signal == 272):
+#	  signaldir = 1
+#	if (signal == 387 and logic == rue):
+#	  looping = false
+	
+#	pwm.set_pwm(0,0,signal)
+#	time.sleep(1)
+#
+#	print(signal)
+
+#	signal ++ signalDir

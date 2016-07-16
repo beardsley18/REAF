@@ -19,7 +19,7 @@ ahrs = []
 pressure = []
 
 # set up sensors
-ser = serial.Serial('/dev/ttyACM0',57600)
+ser = serial.Serial('/dev/ttyACM3',57600)
 average = 0
 count = 0
 total = 0     
