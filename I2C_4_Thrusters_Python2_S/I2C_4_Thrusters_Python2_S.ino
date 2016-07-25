@@ -52,9 +52,7 @@ void loop() {
       //motor1.set(signal_1);
       //signal_1 = 3000;
       motor1.set(signal);
-      motor2.set(0);
-      motor3.set(0);
-      motor4.set(0);
+      
       motor1.update();
 
       /*if(motor1.isAlive()) Serial.println("OK");
@@ -78,9 +76,7 @@ void loop() {
       //motor2.set(signal_2);
       //signal_2 = 3000;
       motor2.set(signal);
-      motor1.set(0);
-      motor3.set(0);
-      motor4.set(0);
+     
       motor2.update();
 
       /*if(motor2.isAlive()) Serial.println("OK");
@@ -104,9 +100,7 @@ void loop() {
       //motor3.set(signal_3);
       //signal_3 = 3000;
       motor3.set(signal);
-      motor2.set(0);
-      motor1.set(0);
-      motor4.set(0);
+      
       motor3.update();
 
       /*if(motor3.isAlive()) Serial.println("OK");
@@ -130,9 +124,7 @@ void loop() {
       //motor4.set(signal_4);
       //signal_4 = 3000;
       motor4.set(signal);
-      motor2.set(0);
-      motor3.set(0);
-      motor1.set(0);
+      
       motor4.update();
 
       /*if(motor4.isAlive()) Serial.println("OK");
