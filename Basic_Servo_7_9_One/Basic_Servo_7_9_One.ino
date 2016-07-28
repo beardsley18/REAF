@@ -34,23 +34,45 @@ servo4.writeMicroseconds(1500);
 }
 
 void loop() {
-  float sensorValue = analogRead(A0);
-  float pressure = sensorValue/15;
-  Serial.println(pressure);
-  delay(1);
+  void pressure(); {
+    float sensorValue = analogRead(A0);
+    float pressure = sensorValue/15;
+    Serial.println(pressure);
+    delay(1);
+  }
 
-if(Serial.available()) {
-  char inByte = Serial.read();
-  int signal = 0;
+void thrusters(); {
+  if(Serial.available() > 0){
+    char inByte = Serial.read();
+    //Serial.println("Beginning of loop");
 
 
   if(inByte == 'a') {
     int signal = 40; // Set signal value, which should be between 1100 and 1900
     servo1.writeMicroseconds(signal); // Send signal to ESC.
-    Serial.println("Sending a");
+    Serial.println("Receiving a");
     }
+    
+   else if(inByte != 'a') {
+    int signal = 1500; // Set signal value, which should be between 1100 and 1900
+    servo1.writeMicroseconds(signal); // Send signal to ESC.
+    Serial.println("Receiving none");
   }
+
+//void serialFlush(); {
+  //while(Serial.available() > 0) {
+    //signal = Serial.read();
+  //if(inByte != 'a') {
+    //int signal = 0; // Set signal value, which should be between 1100 and 1900
+    //servo1.writeMicroseconds(signal); // Send signal to ESC.
+    //Serial.println("Sending a");
+ // }
+  }
+  
 }
+}
+
+
 
 
 
