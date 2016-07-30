@@ -42,8 +42,8 @@ void setup() {
 }
 
 void loop() {
-  float sensorValue = analogRead(A0);
-  float pressure = sensorValue/15;
+  int sensorValue = analogRead(A0);
+  int pressure = sensorValue/15;
   Serial.println(pressure);
   //delay(1);
   

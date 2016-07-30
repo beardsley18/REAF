@@ -97,8 +97,8 @@ class AhrsThread(threading.Thread):
                     line = line.strip()
                     ahrs.append(line)
                     line = ahrsData.readline()
-                    lastRead = ahrsData.tell()
-                    ahrsData.close()
+                lastRead = ahrsData.tell()
+                ahrsData.close()
             except IOError as e:
                 print 'ahrs: ' + str(e)
             
@@ -115,21 +115,25 @@ class ThrustersThread(threading.Thread):
         global average
         global total
         # test1 = 0
+        while average < 0:
+            pass
         while True:
             # print 'thrusters: ' + str(average) + ' ' + str(test)
             if count == ms_per_reading:
                 if average > 4:
                     # ser.write('b')
-                    send('b')
+                    # send('b')
+                    pass
 
-                if average < 4:
+                elif average < 4 and not t2_status:
                     # ser.write('a')
-                    send('a')
+                    send('b')
+                    send('c')
 
-                if average == 4:
+                else average == 4 and not t1_status:
                     # ser.write('c')
                     # ser.write('d')
-                    send('c')
+                    send('a')
                     send('d')
 
                 # test1 += 1
